@@ -1,12 +1,12 @@
-name: lab-1
+name: test retype
 
 on: 
   push:
     branches:
       - main
 jobs:
-  example-job:
+  retyping:
     runs-on: ubuntu-latest
     steps:
-      - name:  test workflow
-        run: echo "test workflow"
+      - name: retyping test
+        run: echo "retyping succsseded"
