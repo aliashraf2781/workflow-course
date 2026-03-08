@@ -1,0 +1,12 @@
+name: lab-1
+
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hellow world
+        run: echo "test workflow"
