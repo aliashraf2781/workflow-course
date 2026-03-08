@@ -1,4 +1,4 @@
-name: test retype
+name: test checkout code
 
 on: 
   push:
@@ -8,5 +8,11 @@ jobs:
   retyping:
     runs-on: ubuntu-latest
     steps:
-      - name: retyping test
-        run: echo "retyping succsseded"
+      - name: start chekout
+        run: echo "start chekinh out"
+
+      - name: checking-out
+        uses: actions/checkout@v6.0.2
+
+      - name: chekout finished
+        run:  ls -la
